@@ -42,7 +42,7 @@ html {
 
 body {
     width: 90%;
-    height: 100%;
+    min-height: 100vh;
     background-color: rgb(237, 242, 244);
     font-family: 'Inter', sans-serif;
 }
