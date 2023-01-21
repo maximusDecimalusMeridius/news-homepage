@@ -18,6 +18,8 @@ _mobileMenuButton.addEventListener("click", (event) => {
     }
 })
 
+_bedCover.addEventListener("click", hideMenu);
+
 _mobileListItems.forEach((listItem) => {
     listItem.addEventListener("click", () => {
         hideMenu();
