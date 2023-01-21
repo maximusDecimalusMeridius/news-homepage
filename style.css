@@ -65,7 +65,8 @@ a {
     color: inherit;
 }
 
-#nav-menu {
+#nav-menu,
+#mobile-menu {
     width: fit-content;
     list-style-type: none;
     display: flex;
@@ -149,18 +150,20 @@ a {
 }
 
 #mobile-menu {
-    width: 300px;
+    width: 200px;
     height: 100%;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, .8);
     right: -350px;
     bottom: 0px;
     position: absolute;
     z-index: 2;
     transition: all .2s ease-out;
+    gap: 10px;
 }
 
 #banner-image {
