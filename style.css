@@ -50,7 +50,7 @@ body {
 }
 
  .cover {
-    background-color: rgba(100, 100, 100, .2);
+    background-color: rgba(100, 100, 100, .4);
     position: absolute;
     inset: 0;
     z-index: 3;
@@ -85,14 +85,14 @@ a {
 }
 
 #mobile-menu {
-    width: 200px;
-    height: 100%;
-    padding-left: 15px;
+    width: 250px;
+    height: 110%;
+    padding: 125px 15px;
     display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, 1);
     right: -350px;
     bottom: 0px;
     position: absolute;
@@ -153,7 +153,7 @@ a {
     cursor: pointer;
     transition: all .1s ease-out;
     position: relative;   
-    z-index: 3;
+    z-index: 4;
 }
 
 #mobile-menu-icon:hover {
@@ -176,7 +176,6 @@ a {
     grid-template-rows: 300px auto;
     gap: 15px;
     position: relative;
-    overflow: hidden;
 }
 
 #banner-image {

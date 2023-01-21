@@ -10,21 +10,21 @@ _mobileMenuButton.addEventListener("click", (event) => {
     const style = getComputedStyle(event.target);
 
     if(style.height === "25px"){
-        showMenu(event.target);
+        showMenu();
     }
     
     if(style.height === "40px"){
-        hideMenu(event.target);
+        hideMenu();
     }
 })
 
 _mobileListItems.forEach((listItem) => {
-    listItem.addEventListener("click", (event) => {
-        hideMenu(event.target.parentElement);
+    listItem.addEventListener("click", () => {
+        hideMenu();
     })
 })
 
-function showMenu(eventTarget) {
+function showMenu() {
     _mobileMenuButton.style.height = "0px";
     _mobileMenuButton.style.width = "0px";
     _mobileMenuButton.style.opacity = "0";
@@ -33,12 +33,12 @@ function showMenu(eventTarget) {
         _mobileMenuButton.style.height = "40px";
         _mobileMenuButton.style.width = "40px";
         _mobileMenuButton.style.opacity = "1";
-        _mobileMenu.style.right = "0px";
+        _mobileMenu.style.right = "-50px";
         _bedCover.style.display = "block";
     }, "250")
 }
 
-function hideMenu(eventTarget) {
+function hideMenu() {
     _mobileMenuButton.style.height = "0px";
     _mobileMenuButton.style.width = "0px";
     _mobileMenuButton.style.opacity = "0";
@@ -47,7 +47,7 @@ function hideMenu(eventTarget) {
         _mobileMenuButton.style.height = "25px";
         _mobileMenuButton.style.width = "40px";
         _mobileMenuButton.style.opacity = "1";
-        _mobileMenu.style.right = "-350px";
+        _mobileMenu.style.right = "-300px";
         _bedCover.style.display = "none";
     }, "250");
 }
