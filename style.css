@@ -65,8 +65,7 @@ a {
     color: inherit;
 }
 
-#nav-menu,
-#mobile-menu {
+#nav-menu {
     width: fit-content;
     list-style-type: none;
     display: flex;
@@ -153,7 +152,7 @@ a {
     width: 200px;
     height: 100%;
     padding-left: 15px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -335,5 +334,9 @@ a {
     
     #mobile-menu-icon {
         display: block;
+    }
+
+    #mobile-menu {
+        display: flex;
     }
 }
